@@ -1,0 +1,27 @@
+server:
+   port: 8082
+   servlet:
+      contextPath: /cdmsapi
+spring:
+   datasource:
+      driver: oracle.jdbc.driver.OracleDriver
+      url: jdbc:oracle:thin:@c4clouddb12102023_high?TNS_ADMIN=/Volumes/Workspace/Codebase/ContractDocumentManagementSystem/cdmsapi/Wallet_c4clouddb12102023
+      username: admin
+      password: Sri@9849613769
+      continueOnError: true
+      initialize: false
+      initialSize: 0
+      timeBetweenEvictionRunsMillis: 5000
+      minEvictableIdleTimeMillis: 5000
+      minIdle: 0
+   jpa:
+      database: ORACLE
+      properties:
+         hibernate:
+            boot:
+               allow_jdbc_metadata_access: false
+      hibernate:
+         ddl-auto: none
+      show-sql: true
+   application:
+      name: cdmsapi
