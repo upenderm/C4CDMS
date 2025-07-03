@@ -1,0 +1,32 @@
+/* Footer */
+footer {
+    display: flex;
+    // padding: 20px;
+    text-align: center;
+    background-color: rgb(3, 174, 183);
+    // margin-top: 20px;
+    //height: 20%;
+    border-style: solid;
+    border: 2px;
+    border-color: black;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.padding-left-20 {
+    padding-left: 20px;
+}
+.padding-right-20 {
+    padding-right: 20px;
+}
+.mail-to-position {
+    position: absolute;
+    right: 0px
+}

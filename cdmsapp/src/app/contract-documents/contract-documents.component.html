@@ -1,0 +1,38 @@
+<div style="margin-top: 15%;position: absolute;">
+  <h1>All Available Contracts</h1>
+  <button mat-flat-button>Add Contract</button>
+  <button mat-raised-button color="success">Success</button>
+  <div *ngIf="errorMsg; else elseBlock">
+    <h2>{{ errorMsg }}</h2>
+  </div>
+  <ng-template #elseBlock>
+    <div></div>
+    <table id="contracts">
+      <thead>
+        <tr>
+          <th scope="col">Contract ID</th>
+          <th scope="col">Contract Title</th>
+          <th scope="col">Contract Desc</th>
+          <th scope="col">Status</th>
+          <th scope="col">Start Date</th>
+          <th scope="col">End Date</th>
+          <th scope="col">Renewal Date</th>
+          <th scope="col">Template ID</th>
+        </tr>
+      </thead>
+      <tbody>
+        <div *ngIf="contractsList.length==0">No records found</div>
+        <tr *ngFor="let contract of contractsList">
+          <th scope="row">{{ contract.contractID}}</th>
+          <td>{{ contract.contractTitle}}</td>
+          <td>{{ contract.contractDesc}}</td>
+          <td>{{ contract.contractStatus}}</td>
+          <td>{{ contract.contractStartDate | date:'medium'}}</td>
+          <td>{{ contract.contractEndDate | date:'medium'}}</td>
+          <td>{{ contract.contractRenewalDate | date:'medium'}}</td>
+          <td>{{ contract.templateID}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </ng-template>
+</div>
