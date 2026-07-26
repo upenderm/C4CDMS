@@ -5,9 +5,9 @@ server:
 spring:
    datasource:
       driver: oracle.jdbc.driver.OracleDriver
-      url: jdbc:oracle:thin:@c4clouddb12102023_high?TNS_ADMIN=/Volumes/Workspace/Codebase/ContractDocumentManagementSystem/cdmsapi/Wallet_c4clouddb12102023
-      username: admin
-      password: Sri@9849613769
+      url: ${DB_URL}
+      username: ${DB_USERNAME}
+      password: ${DB_PASSWORD}
       continueOnError: true
       initialize: false
       initialSize: 0
