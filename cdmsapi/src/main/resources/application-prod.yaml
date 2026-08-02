@@ -1,5 +1,5 @@
 spring:
    datasource:
-      url: jdbc:oracle:thin:@c4clouddb12102023_high?TNS_ADMIN=/usr/share/tomcat/Wallet_c4clouddb12102023
+      url: jdbc:oracle:thin:@c4clouddb12102023_high?TNS_ADMIN=/opt/config/oracle/wallet
       username: admin
       password: Sri9849613769
